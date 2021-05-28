@@ -8,13 +8,11 @@ public class EncodeSequential {
 	// Variables
 	BufferedImage img;
 	static String message;
-	static String route;
 	
 	// Constructor
-	public EncodeSequential(BufferedImage img, String message, String route) {
+	public EncodeSequential(BufferedImage img, String message) {
 		this.img = img;
 		EncodeSequential.message = message;
-		EncodeSequential.route = route;
 	}
 	
 	// Add garbage information to the message
@@ -76,10 +74,11 @@ public class EncodeSequential {
 	public static BufferedImage newImage(BufferedImage image) {
 		//System.out.print("ES:" + message + "\n");
 		try {
-			ImageIO.write(image, "png", new File(route + "\\steg1.png"));	
+			ImageIO.write(image, "png", new File("steg1.png"));	
 		} catch (IOException e) {
 			
 		}		
 		return image;
 	}
 }
+

@@ -9,14 +9,12 @@ public class EncodeParallel implements Runnable {
 	BufferedImage img;
 	private static String message;
 	private int start;
-	static String route;
 	
 	// Constructor
-	public EncodeParallel(BufferedImage img, String message, int start, String route) {
+	public EncodeParallel(BufferedImage img, String message, int start) {
 		this.img = img;
 		this.message = message;
 		this.start = start;
-		EncodeParallel.route = route;
 	}
 
 	// Add garbage information to the message
@@ -76,7 +74,7 @@ public class EncodeParallel implements Runnable {
 	public static BufferedImage newImage(BufferedImage image) {
 		//System.out.print(route);
 		try {
-			ImageIO.write(image, "png", new File(route + "\\steg1.png"));	
+			ImageIO.write(image, "png", new File("steg1.png"));	
 		} catch (IOException e) {
 			
 		}		
