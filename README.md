@@ -1,6 +1,6 @@
-# Steganography for copyrighting
+# Steganography for Copyright
 
-This proyect has the purpose of helping copyrighting laws by applying techniques to hide information at plain sight.
+This proJect has the purpose of helping copyrighting laws by applying techniques to hide information at plain sight.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,23 +19,21 @@ This proyect has the purpose of helping copyrighting laws by applying techniques
 
 This repo also includes the .jar file, the one needed to run the proyect without compiling the repo in java. The jar file needs some information:
 
-- A **jpg image**. The name of the image + jpg extension file. ex: "image.jpg"
-- The **route** where the image is located. ex: "C:\Users\user\Documents\proyect"
-- a **message** to encrypt
+- A **jpg image**
+- A **message** to encrypt
 
-The steganography program lets you encrypt and decrypt an image, with both funcionalities.
+The steganography program lets you hide and recover a message from an image
 
 ## Steps
 
-**To Encrypt**
+**Hide message**
 1. Open the file "stegjava.jar (or download it if it's not).
-2. On te left side is the encryption menu, enter the message to hide, the image route and the image name, finally press "hide".
+2. On the left side is the Hiding Menu, enter the message to hide, select the image to use and click ”Hide”.
 3. The result should be an image named "steg1.jpg".
 
-**To Decrypt**
+**Recover message**
 1. Open the file "stegjava.jar (or download it if it's not).
-2. On the right side is the decryption menu, insert the encrypted image name, the route and click "recover".
+2. On the right side is the Recovery Menu, insert the modified image and click ”Recover”.
 3. The result should be the recovered message.
 
 On both cases the parallel and sequential execution times will be on the bottom.
-
